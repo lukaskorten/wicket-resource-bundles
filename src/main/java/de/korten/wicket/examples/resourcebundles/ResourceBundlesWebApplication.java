@@ -1,5 +1,6 @@
 package de.korten.wicket.examples.resourcebundles;
 
+import de.korten.wicket.examples.resourcebundles.pages.FirstPage;
 import org.apache.wicket.Page;
 import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
