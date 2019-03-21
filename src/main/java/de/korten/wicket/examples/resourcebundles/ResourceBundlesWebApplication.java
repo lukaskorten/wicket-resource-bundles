@@ -1,5 +1,10 @@
 package de.korten.wicket.examples.resourcebundles;
 
+import de.korten.wicket.examples.resourcebundles.css.BaseCssResourceReference;
+import de.korten.wicket.examples.resourcebundles.css.BoxCssResourceReference;
+import de.korten.wicket.examples.resourcebundles.css.PatternCssResourceReference;
+import de.korten.wicket.examples.resourcebundles.js.FirstJsResourceReference;
+import de.korten.wicket.examples.resourcebundles.js.SecondJsResourceReference;
 import de.korten.wicket.examples.resourcebundles.pages.FirstPage;
 import org.apache.wicket.Page;
 import org.apache.wicket.protocol.http.WebApplication;
@@ -32,6 +37,21 @@ public class ResourceBundlesWebApplication extends WebApplication {
         initPageMounting();
         initMarkupSetting();
         initDebugSettings();
+        initResourceBundles();
+    }
+
+    private void initResourceBundles() {
+        getResourceBundles().addJavaScriptBundle(ResourceBundlesWebApplication.class,
+                "jsBundle",
+                FirstJsResourceReference.get(),
+                SecondJsResourceReference.get()
+        );
+        getResourceBundles().addCssBundle(ResourceBundlesWebApplication.class,
+                "cssBundle",
+                BaseCssResourceReference.get(),
+                BoxCssResourceReference.get(),
+                PatternCssResourceReference.get()
+        );
     }
 
     private void initDebugSettings() {

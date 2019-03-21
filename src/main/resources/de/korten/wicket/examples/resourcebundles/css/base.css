@@ -1,0 +1,41 @@
+body {
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    color: #3e3e3e;
+}
+
+main {
+    width: 900px;
+    margin: 100px auto;
+}
+
+#output {
+    margin-top: 80px;
+}
+
+.primary {
+    color: dodgerblue;
+}
+
+.secondary {
+    color: darkorange;
+}
+
+.nav {
+    display: inline-flex;
+    list-style: none;
+    margin-left: -15px;
+    padding: 0;
+}
+
+.nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #0d6e81;
+    transition: all ease-in-out 250ms;
+    border-radius: 6px;
+}
+
+.nav a:hover {
+    color: #0c1f2f;
+    background: #eeeeee;
+}

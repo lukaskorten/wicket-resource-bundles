@@ -1,4 +1,4 @@
-package de.korten.wicket.examples.resourcebundles.jsresources;
+package de.korten.wicket.examples.resourcebundles.js;
 
 import org.apache.wicket.request.resource.JavaScriptResourceReference;
 

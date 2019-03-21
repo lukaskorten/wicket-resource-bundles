@@ -1,0 +1,16 @@
+.container {
+    margin-top: 40px;
+    display: flex;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #eeeeee;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px -4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 110px 0;
+    box-sizing: border-box;
+    margin-right: 15px;
+}
